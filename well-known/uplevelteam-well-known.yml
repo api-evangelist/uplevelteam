@@ -1,0 +1,40 @@
+generated: '2026-07-21'
+method: searched
+description: >-
+  Results of probing the /.well-known/ discovery surface for the hosts found in
+  apis.yml (Website https://uplevelteam.com) plus discovered subdomains. Status
+  is the HTTP code observed at fetch time (2026-07-21). No document returned a
+  real payload, so nothing was saved verbatim. Notable: /llms.txt on the main
+  host 302-redirects to /hubfs/llms.txt and is a real llms.txt (saved under
+  llms/); api.uplevelteam.com resolves and answers 404 application/json via AWS
+  API Gateway (apigw-requestid header) but exposes no public discovery surface.
+hosts:
+  - host: https://uplevelteam.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 302
+        note: Redirects to /hubfs/llms.txt (200 text/plain); saved as llms/uplevelteam-llms.txt.
+      - path: /robots.txt
+        status: 200
+        note: Present; not part of the well-known set, recorded for completeness.
+subdomains_probed:
+  - {host: https://trust.uplevelteam.com, status: 200, note: Vanta-hosted trust center (see security/uplevelteam-trust-center.yml)}
+  - {host: https://docs.uplevelteam.com, status: 200, note: Notion-hosted site shell; content renders client-side}
+  - {host: https://api.uplevelteam.com, status: 404, note: Resolves; AWS API Gateway JSON 404; no public spec/docs endpoints (/openapi.json, /swagger.json, /v1, /graphql, /health, /docs all 404)}
+  - {host: https://resources.uplevelteam.com, status: 404, note: Root 404 but /knowledge-base/* pages are referenced by the published llms.txt}
+  - {host: https://developer.uplevelteam.com, status: null, note: Does not resolve}
+  - {host: https://help.uplevelteam.com, status: null, note: Does not resolve}
+  - {host: https://status.uplevelteam.com, status: null, note: Does not resolve}
+  - {host: https://app.uplevelteam.com, status: null, note: Does not resolve}

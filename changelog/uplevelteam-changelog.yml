@@ -1,0 +1,49 @@
+generated: '2026-07-21'
+method: searched
+source: https://uplevelteam.com/llms.txt
+docs: https://resources.uplevelteam.com/knowledge-base
+description: >-
+  Uplevel publishes dated product release notes in its knowledge base at
+  resources.uplevelteam.com/knowledge-base/ (feature releases for the Uplevel
+  engineering-intelligence platform, not a public API changelog — Uplevel
+  exposes no public developer API). Entries below are captured verbatim from
+  the provider-published llms.txt index of those release-note pages; titles
+  and summaries are the provider's own. The knowledge-base pages 301-redirect
+  through the provider's CMS at fetch time.
+scheme: dated release notes (YYYY-MM-DD), no public version numbers
+entries:
+  - date: '2024-12-03'
+    title: Allocation estimated costs in dollars
+    summary: Uplevel's allocation report can now optionally estimate the cost of effort in dollars based on salary bands.
+    url: https://resources.uplevelteam.com/knowledge-base/2024-12-03
+    kind: addition
+  - date: '2024-11-19'
+    title: See Dev Weeks of effort in Allocation
+    summary: Time allocation insights now offer a new way to understand time invested across different areas.
+    url: https://resources.uplevelteam.com/knowledge-base/2024-11-19
+    kind: addition
+  - date: '2024-11-04'
+    title: Updated labels for Other efforts in Time Allocation
+    summary: Terminology in Time Allocation updated to better explain time spent on tasks not tracked in issue-tracking systems.
+    url: https://resources.uplevelteam.com/knowledge-base/2024-11-04
+    kind: change
+  - date: '2024-08-26'
+    title: See insights at the Bi-weekly, Monthly, or Quarterly level
+    summary: In addition to weekly tracking, insights can now be viewed as bi-weekly, monthly, or quarterly trends.
+    url: https://resources.uplevelteam.com/knowledge-base/uplevel-feature-release-1
+    kind: addition
+  - date: '2024-05-29'
+    title: 'Time Allocation: updated labels for unallocated time'
+    summary: Updated terms to clarify what's being measured.
+    url: https://resources.uplevelteam.com/knowledge-base/time-allocation-updated-labels-for-unallocated-time
+    kind: change
+  - date: '2024-05-08'
+    title: Sustained Always On — terminology update
+    summary: The insight previously shown as "Burnout Risk" has a new label of "Sustained Always On".
+    url: https://resources.uplevelteam.com/knowledge-base/sustained-always-on-release
+    kind: change
+  - date: '2024-03-06'
+    title: Epic Lead Time
+    summary: Better understand the flow of work from planning to completion with Epic Lead Time.
+    url: https://resources.uplevelteam.com/knowledge-base/uplevel-feature-release-lead-time
+    kind: addition

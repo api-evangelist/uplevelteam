@@ -1,9 +1,32 @@
 aid: uplevelteam
-name: Uplevelteam
-description: 'Uplevelteam is a company surfaced as a portfolio company of norwest-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead
-  awaiting the enrichment pipeline.'
+name: Uplevel
+description: >-
+  Uplevel is an engineering intelligence platform for enterprises — an
+  operating system for engineering transformation that helps leaders see team
+  performance clearly, solve root causes, and sustain improvement in the AI
+  era. The platform pulls data from existing tools and uses machine learning to
+  produce engineering metrics and actionable insights: DORA metrics, time
+  allocation and ML issue classification, deep-work and interruption
+  measurement, developer-experience metrics, and AI-impact analysis, framed by
+  the company's WAVE framework of engineering KPIs. Founded in 2018 and led by
+  CEO Joe Levy, Uplevel is backed by Norwest Venture Partners, Madrona
+  Ventures, and Voyager Capital. Uplevel serves enterprise customers such as
+  Xactly, Accolade, Braze, Avalara, and Qualtrics; it operates an internal API
+  behind the product (api.uplevelteam.com, AWS API Gateway) but publishes no
+  public developer API surface.
 url: https://raw.githubusercontent.com/api-evangelist/uplevelteam/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://uplevelteam.com/hubfs/OG%20Images%20(1).png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,16 +35,51 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Unknown
+- Engineering Intelligence
+- Developer Productivity
+- Developer Experience
+- DORA Metrics
+- Software Engineering
+- Analytics
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1
 common:
 - type: Website
   url: https://uplevelteam.com
+- type: Blog
+  url: https://uplevelteam.com/resources
+- type: PrivacyPolicy
+  url: https://uplevelteam.com/privacy-policy
+- type: TrustCenter
+  url: https://trust.uplevelteam.com/
+- type: Compliance
+  url: https://trust.uplevelteam.com/
+- type: Careers
+  url: https://uplevelteam.com/careers
+- type: GitHubOrganization
+  url: https://github.com/uplevelteam
+- type: LinkedIn
+  url: https://www.linkedin.com/company/uplevelteam/
+- type: YouTube
+  url: https://www.youtube.com/@uplevelplatform
+- type: ChangeLog
+  url: changelog/uplevelteam-changelog.yml
+- type: LLMsTxt
+  url: llms/uplevelteam-llms.txt
+- type: WellKnown
+  url: well-known/uplevelteam-well-known.yml
+- type: DomainSecurity
+  url: security/uplevelteam-domain-security.yml
