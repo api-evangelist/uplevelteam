@@ -1,8 +1,26 @@
 generated: '2026-10-14'
-method: none
+method: searched
 checked:
 - https://github.com/marketplace?type=apps
+- atlassian/integrations/atlassian-integration-edges.yml
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: Atlassian (own)
+  partner: atlassian
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.atlassian.com/vendors/266547397/uplevel
+  mirror_of: atlassian/integrations/atlassian-integration-edges.yml
+  apps:
+  - Uplevel
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: Atlassian Marketplace app
 source:
 - https://github.com/marketplace?type=apps
